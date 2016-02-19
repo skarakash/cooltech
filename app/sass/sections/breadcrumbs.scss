@@ -1,0 +1,23 @@
+.breadcrumbs {
+    font-size: 14px;
+    font-weight: 400;
+    &__item {
+        display: inline-block;
+        color: #333333;
+        margin-right: 15px;
+        position: relative;
+    }
+    &__link {
+        &_active {
+            color: #ff6600;
+            position: relative;
+            &:after {
+                content: '>';
+                position: absolute;
+                top: 0;
+                left: -12px;
+                color: #333333;
+            }
+        }
+    }
+}

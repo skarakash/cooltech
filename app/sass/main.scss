@@ -1,0 +1,38 @@
+@import "compass";
+// header
+@import "sections/header";
+//breadcrumbs
+@import "sections/breadcrumbs";
+//info
+@import "sections/info_block";
+//footer
+@import "sections/footer";
+@import "../sprites/sprite";
+body,
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "OpenSans-Regular", sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+    height: 220px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}

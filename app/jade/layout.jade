@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title Cooltech
+    //SEO
+    meta(name="description" content="cooltech")
+    meta(name="keywords" content="cooltech")
+    meta(name="author" content="Sergey Karakash")
+    //favicon.ico
+    //bowerCSS
+    link(rel="stylesheet", href="bower/normalize-css/normalize.css")
+    //CSS
+    link(rel="stylesheet", href="css/style.css")
+    //modernizer
+    script(src="bower/modernizer/modernizr.js")
+    //[if lt IE 9]
+        script(src="/vendor/assets/js/html5shiv.js")
+        script(src="/vendor/assets/js/respond.min.js")
+        //[endif]
+body
+    .wrapper
+        block header
+            include includes/header
+        block breadcrumbs
+            include includes/breadcrumbs
+        block info_block    
+            include includes/info_block
+        script(src="bower/jquery/jquery.js")
+        script(src="js/main.js")
+        block footer
+            include includes/footer
+        
+
+    

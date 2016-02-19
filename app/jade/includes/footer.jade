@@ -1,0 +1,21 @@
+footer.footer
+    .container
+        .logo.logo__footer
+            img(src="../../img/logo-footer.png", alt="cooltech").logo_img.logo_img_footer
+        .socials.socials__footer
+                ul.socials_list.socials_list_footer
+                    li.socials__item.socials__item-footer
+                        a(href="#" target="_blank").socials__link.socials__link-footer-fb fb
+                    li.socials__item.socials__item-footer
+                        a(href="#" target="_blank").socials__link.socials__link-footer-vk vk  
+                    li.socials__item.socials__item-footer.socials__item-footer-last
+                        a(href="#" target="_blank").socials__link.socials__link-footer-tw tw    
+        .nav__footer_block
+            ul.nav__list.nav__list-footer             
+                - var nav = ['Планшеты', 'Мобильные телефоны', 'Mp3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Акссесуары', 'Бытовая техника']
+                    each item in nav
+                        li.nav_list_item.nav_list_item-footer
+                            a(href="#" class="nav_list_link").nav_list_link-footer= item
+        .copyright
+            span.copyright__text
+                |All rights reserved. 2015. no copy alowed
