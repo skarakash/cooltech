@@ -1,0 +1,17 @@
+.catalog {
+    float: right;
+    width: 67.2727%;
+    &__filter {
+        height: 51px;
+        width: 100%;
+        background-color: rgba(217, 229, 234, 0.6);
+        font-size: 14px;
+        font-weight: 400;
+        border: 1px solid #d9e5ea;
+    }
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}

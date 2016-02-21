@@ -36,6 +36,10 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
+.header {
+  background-color: #ffffff;
+}
+
 .icons-and-contacts {
   min-height: 77px;
 }
@@ -90,7 +94,7 @@ The `sprites` mixin generates identical output to the CSS template
 }
 .contacts__adress {
   display: inline-block;
-  width: 198px;
+  width: 202px;
   position: relative;
   float: left;
 }
@@ -216,6 +220,7 @@ The `sprites` mixin generates identical output to the CSS template
 .breadcrumbs {
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 21px;
 }
 .breadcrumbs__item {
   display: inline-block;
@@ -235,10 +240,164 @@ The `sprites` mixin generates identical output to the CSS template
   color: #333333;
 }
 
+.page__header {
+  margin-bottom: 35px;
+}
+.page__header_text {
+  width: 1130px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.content:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.sidebar {
+  float: left;
+  width: 30%;
+}
+.sidebar__filter__list {
+  list-style-type: none;
+  text-decoration: none;
+}
+.sidebar__filter__inner__list {
+  list-style-type: none;
+  text-decoration: none;
+  display: none;
+}
+.sidebar:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.sidebar__filter__item-trigger {
+  height: 45px;
+  line-height: 45px;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 30px;
+  text-decoration: none;
+  display: block;
+  color: #333333;
+  border: .5px solid #dee2e5;
+}
+.sidebar__filter__item-trigger:hover {
+  background-color: #d9e5ea;
+}
+
+.cellphone__type__list {
+  list-style-type: none;
+  background-color: #fbfbfb;
+  font-size: 14px;
+  font-weight: 400;
+  color: #7f7f7f;
+  margin-bottom: 40px;
+}
+.cellphone__type__item {
+  border: 1px solid #dee2e5;
+  height: 45px;
+  padding-left: 30px;
+  line-height: 45px;
+}
+.cellphone__type__item:hover {
+  background-color: #d9e5ea;
+}
+.cellphone__type__item-first {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 0;
+}
+.cellphone__type__item-last {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 0;
+}
+
+.radio__input {
+  height: 0;
+  display: none;
+}
+
+.radio__input__label {
+  position: relative;
+  cursor: pointer;
+  color: #555;
+}
+
+.radio__input__label:before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 3px solid #dee2e5;
+  background-color: #ffffff;
+  background-clip: content-box;
+  transition: 0.1s;
+}
+.radio__input__label:before:hover:before {
+  background-color: #ff6600;
+  padding: 2px;
+}
+
+.radio__input:checked + .radio__input__label:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  border-radius: 10px;
+  border: 3px solid #ff6600;
+  background-color: #ff6600;
+  padding: 2px;
+  background-clip: content-box;
+  transition: 0.2s;
+}
+
+.availability__filter__item {
+  list-style-type: none;
+  padding-left: 60px;
+  line-height: 37px;
+}
+
+.catalog {
+  float: right;
+  width: 67.2727%;
+}
+.catalog__filter {
+  height: 51px;
+  width: 100%;
+  background-color: rgba(217, 229, 234, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #d9e5ea;
+}
+.catalog:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .infoblock {
   margin-bottom: 30px;
   text-align: justify;
   font-size: 0.875rem;
+  clear: both;
 }
 .infoblock__leftcol {
   float: left;
@@ -255,6 +414,16 @@ The `sprites` mixin generates identical output to the CSS template
   content: '';
   display: block;
   clear: both;
+}
+
+.first {
+  width: 48% !important;
+  float: left !important;
+}
+
+.last {
+  width: 48% !important;
+  float: right !important;
 }
 
 /*
@@ -386,7 +555,7 @@ The `sprites` mixin generates identical output to the CSS template
   position: absolute;
   right: 0;
   top: 0;
-  width: 605px;
+  width: 630px;
   text-align: right;
   margin-top: 110px;
 }
@@ -423,7 +592,7 @@ body,
 html {
   height: 100%;
   width: 100%;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans-Regular";
 }
 
 .wrapper {

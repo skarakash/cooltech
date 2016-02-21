@@ -1,5 +1,9 @@
 @import "compass";
 @import "../../sprites/sprite";
+.header {
+    background-color: #ffffff;
+}
+
 .icons-and-contacts {
     min-height: 77px;
 }
@@ -46,7 +50,7 @@
     }
     &__adress {
         display: inline-block;
-        width: 198px;
+        width: 202px;
         position: relative;
         float: left;
         &:before {

@@ -1,5 +1,6 @@
 app/bower
 app/.sass-cache
+.sass-cache
 app/pre-css
 node_modules
 dist

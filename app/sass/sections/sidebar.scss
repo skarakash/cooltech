@@ -1,0 +1,120 @@
+.sidebar {
+    float: left;
+    width: 30%;
+    &__filter__list {
+        list-style-type: none;
+        text-decoration: none;
+    }
+    &__filter__inner__list {
+        list-style-type: none;
+        text-decoration: none;
+        display: none;
+    }
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.sidebar__filter__item-trigger {
+    height: 45px;
+    line-height: 45px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 30px;
+    text-decoration: none;
+    display: block;
+    color: #333333;
+    border: .5px solid #dee2e5;
+    &:hover {
+        background-color: #d9e5ea;
+    }
+}
+
+.cellphone__type {
+    &__list {
+        list-style-type: none;
+        background-color: #fbfbfb;
+        font-size: 14px;
+        font-weight: 400;
+        color: #7f7f7f;
+        margin-bottom: 40px;
+    }
+    &__item {
+        border: 1px solid #dee2e5;
+        height: 45px;
+        padding-left: 30px;
+        line-height: 45px;
+        &:hover {
+            background-color: #d9e5ea;
+        }
+        &-first {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom: 0;
+        }
+        &-last {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top: 0;
+        }
+    }
+}
+
+.radio__input {
+    height: 0;
+    display: none;
+}
+
+.radio__input__label {
+    position: relative;
+    cursor: pointer;
+    color: #555;
+}
+
+.radio__input__label:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    position: absolute;
+    left: -30px;
+    bottom: 0;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 3px solid #dee2e5;
+    background-color: #ffffff; //#dee2e5;
+    background-clip: content-box;
+    transition: 0.1s;
+    &:hover:before {
+        background-color: #ff6600; //#dee2e5;
+        padding: 2px;
+    }
+}
+
+.radio__input:checked + .radio__input__label:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    position: absolute;
+    left: -30px;
+    bottom: 0;
+    border-radius: 10px;
+    border: 3px solid #ff6600;
+    background-color: #ff6600; //#dee2e5;
+    padding: 2px;
+    background-clip: content-box;
+    transition: 0.2s;
+}
+
+.availability__filter__item {
+    list-style-type: none;
+    padding-left: 60px;
+    line-height: 37px;
+}

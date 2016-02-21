@@ -1,18 +1,17 @@
 @import "compass";
-// header
 @import "sections/header";
-//breadcrumbs
 @import "sections/breadcrumbs";
-//info
+@import "sections/content";
+@import "sections/sidebar";
+@import "sections/catalog";
 @import "sections/info_block";
-//footer
 @import "sections/footer";
 @import "../sprites/sprite";
 body,
 html {
     height: 100%;
     width: 100%;
-    font-family: "OpenSans-Regular", sans-serif;
+    font-family: "OpenSans-Regular";
 }
 
 .wrapper {

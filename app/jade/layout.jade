@@ -13,6 +13,7 @@ head
     link(rel="stylesheet", href="bower/normalize-css/normalize.css")
     //CSS
     link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="fonts/fonts.css")
     //modernizer
     script(src="bower/modernizer/modernizr.js")
     //[if lt IE 9]
@@ -25,9 +26,11 @@ body
             include includes/header
         block breadcrumbs
             include includes/breadcrumbs
+        block content    
         block info_block    
             include includes/info_block
         script(src="bower/jquery/jquery.js")
+        script(src="bower/jquery.columnizer/src/jquery.columnizer.js")
         script(src="js/main.js")
         block footer
             include includes/footer
