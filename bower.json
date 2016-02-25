@@ -6,6 +6,8 @@
     "modernizer": "~2.8.2"
   },
   "devDependencies": {
-    "jquery.columnizer": "~1.6.2"
+    "jquery.columnizer": "~1.6.2",
+    "jquery-ui": "~1.11.4",
+    "select2": "~4.0.1"
   }
 }

@@ -29,9 +29,9 @@ gulp.task('compass', function () {
 });
 
 gulp.task('sprite', function () {
-    var spriteData = gulp.src('app/img/socials-footer/*.png').pipe(spritesmith({
-        imgName: 'spriteSocialsFooter.png',
-        cssName: 'spriteSocialsFooter.scss',
+    var spriteData = gulp.src('app/img/viewOptions/*.png').pipe(spritesmith({
+        imgName: 'viewOptions.png',
+        cssName: 'viewOptions.scss',
         algorithm: 'left-right',
         padding: 70
 

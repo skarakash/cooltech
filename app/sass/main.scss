@@ -1,11 +1,23 @@
 @import "compass";
+//header
 @import "sections/header";
+//breadcrumbs
 @import "sections/breadcrumbs";
+//content
 @import "sections/content";
+//sidebar
 @import "sections/sidebar";
+//accordeon
+@import "sections/accordeon";
+//jquery-ui
+@import "sections/jquery-ui";
+//catalog
 @import "sections/catalog";
+//info_block
 @import "sections/info_block";
+//footer
 @import "sections/footer";
+//sprite
 @import "../sprites/sprite";
 body,
 html {
@@ -18,6 +30,7 @@ html {
     min-height: 100%;
     overflow: hidden;
     position: relative;
+    background-color: #f4f4f4;
 }
 
 .wrapper:after {

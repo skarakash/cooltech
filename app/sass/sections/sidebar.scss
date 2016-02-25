@@ -4,6 +4,7 @@
     &__filter__list {
         list-style-type: none;
         text-decoration: none;
+        background-color: #fbfbfb;
     }
     &__filter__inner__list {
         list-style-type: none;
@@ -61,60 +62,4 @@
             border-top: 0;
         }
     }
-}
-
-.radio__input {
-    height: 0;
-    display: none;
-}
-
-.radio__input__label {
-    position: relative;
-    cursor: pointer;
-    color: #555;
-}
-
-.radio__input__label:before {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin-right: 10px;
-    position: absolute;
-    left: -30px;
-    bottom: 0;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border: 3px solid #dee2e5;
-    background-color: #ffffff; //#dee2e5;
-    background-clip: content-box;
-    transition: 0.1s;
-    &:hover:before {
-        background-color: #ff6600; //#dee2e5;
-        padding: 2px;
-    }
-}
-
-.radio__input:checked + .radio__input__label:before {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin-right: 10px;
-    position: absolute;
-    left: -30px;
-    bottom: 0;
-    border-radius: 10px;
-    border: 3px solid #ff6600;
-    background-color: #ff6600; //#dee2e5;
-    padding: 2px;
-    background-clip: content-box;
-    transition: 0.2s;
-}
-
-.availability__filter__item {
-    list-style-type: none;
-    padding-left: 60px;
-    line-height: 37px;
 }
