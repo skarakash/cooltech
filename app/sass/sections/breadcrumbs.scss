@@ -10,7 +10,7 @@
     }
     &__link {
         &_active {
-            color: #ff6600;
+            color: #333333;
             position: relative;
             &:after {
                 content: '>';
@@ -19,6 +19,9 @@
                 left: -12px;
                 color: #333333;
             }
+        }
+        &:hover {
+          color: #ff6600;
         }
     }
 }

@@ -131,6 +131,7 @@
 .goods__list {
   list-style-type: none;
   margin-right: -15px;
+  overflow: hidden;
   &__item {
     background-color: #ffffff;
     border-radius: 5px;
@@ -279,6 +280,11 @@
 .goods__desctription__text {
   display: block;
 }
+.goods__desctription__header__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /*-------------------------- item's ratio ----------------------*/
 .ratio__list {
   display: inline-block;
@@ -337,12 +343,23 @@
 }
 .charachteristic__name {
   float: left;
+  width: 48%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .charachteristic__description {
   float: right;
+  width: 50%;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .charachteristics__list {
   margin-bottom: 10px;
+  list-style-type: none;
 }
 .charachteristics__list__item {
   height: 21px;
@@ -378,6 +395,9 @@
 }
 .goods__desctription__header__table-view {
   margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .grid__view {
   width: 235px;
@@ -387,16 +407,13 @@
 .none {
   display: none;
 }
-
 .goods__list__item__short {
   display: none;
   min-height: 0;
 }
-
 .goods__availability__text__short {
   position: relative;
 }
-
 .articul__short,
 .goods__desctription__header__short,
 .goods__price__short,
@@ -404,19 +421,18 @@
   display: inline-block;
   margin-bottom: 0;
 }
-
 .articul__short {
   width: 105px;
   margin-right: 15px;
 }
-
 .goods__desctription__header__short {
-  width: 230px;
+  width: 236px;
   margin-right: 8px;
-  text-overflow: ellipsis;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
 .goods__availability__text__short {
   position: relative;
   margin-right: 20px;
@@ -427,12 +443,10 @@
     content: url("../img/green_point.png");
   }
 }
-
 .goods__price__short {
-  width: 81px;
+  width: 84px;
   margin-right: 45px;
 }
-
 .add_to-basket__button__short {
   display: inline-block;
   margin-bottom: 0;
@@ -440,7 +454,6 @@
 .add__button__short {
   width: 205px;
 }
-
 .goods__list__item_wrapper__short {
   padding: 6px 13px;
 }

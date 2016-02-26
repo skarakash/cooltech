@@ -29,9 +29,9 @@ gulp.task('compass', function () {
 });
 
 gulp.task('sprite', function () {
-    var spriteData = gulp.src('app/img/viewOptions/*.png').pipe(spritesmith({
-        imgName: 'viewOptions.png',
-        cssName: 'viewOptions.scss',
+    var spriteData = gulp.src('app/img/socials/*.png').pipe(spritesmith({
+        imgName: 'sprite.png',
+        cssName: 'sprite.scss',
         algorithm: 'left-right',
         padding: 70
 
@@ -44,7 +44,7 @@ gulp.task('concat', function () {
         .pipe(concat('style.css', {
             newLine: '\n'
         }))
-        .pipe(gulp.dest('app/css'))
+        .pipe(gulp.dest('app/css'));
 });
 
 gulp.task('jade', function () {
@@ -53,7 +53,7 @@ gulp.task('jade', function () {
         .pipe(jade({
             pretty: '\t'
         }))
-        .pipe(gulp.dest('app'))
+        .pipe(gulp.dest('app'));
 });
 
 

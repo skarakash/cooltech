@@ -3,4 +3,5 @@ app/.sass-cache
 .sass-cache
 app/pre-css
 node_modules
+app/jade/includes
 dist

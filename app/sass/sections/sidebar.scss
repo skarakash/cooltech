@@ -61,5 +61,9 @@
             border-bottom-right-radius: 5px;
             border-top: 0;
         }
+        &_active {
+          background-color: #d9e5ea;
+          font-weight: 600;
+        }
     }
 }
