@@ -1,69 +1,41 @@
+$grey: #dee2e5;
+$orange: #ff6600;
 .sidebar {
-    float: left;
-    width: 30%;
-    &__filter__list {
-        list-style-type: none;
-        text-decoration: none;
-        background-color: #fbfbfb;
-    }
-    &__filter__inner__list {
-        list-style-type: none;
-        text-decoration: none;
-        display: none;
-    }
-    &:after {
-        content: '';
-        display: block;
-        clear: both;
-    }
-}
-
-.sidebar__filter__item-trigger {
-    height: 45px;
-    line-height: 45px;
-    background-color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
-    padding-left: 30px;
-    text-decoration: none;
+  float: left;
+  width: 30%;
+  margin-bottom: 30px;
+  &::after {
+    content: '';
     display: block;
-    color: #333333;
-    border: .5px solid #dee2e5;
-    &:hover {
-        background-color: #d9e5ea;
-    }
+    clear: both;
+  }
 }
-
-.cellphone__type {
-    &__list {
-        list-style-type: none;
-        background-color: #fbfbfb;
-        font-size: 14px;
-        font-weight: 400;
-        color: #7f7f7f;
-        margin-bottom: 40px;
+.products {
+  margin-bottom   : 40px;
+  background-color: #fbfbfb;
+  &__list {
+    border         : 1px solid $grey;
+    border-radius  : 5px;
+    list-style-type: none;
+    overflow       : hidden;
+  }
+  &__link {
+    display        : block;
+    width          : 100%;
+    box-sizing     : border-box;
+    padding        : 16px 30px;
+    text-decoration: none;
+    color          : #808080;
+  }
+  &__item {
+    &:first-child {
+      border-top      : 0;
+      background-color: #fbfbfb;
     }
-    &__item {
-        border: 1px solid #dee2e5;
-        height: 45px;
-        padding-left: 30px;
-        line-height: 45px;
-        &:hover {
-            background-color: #d9e5ea;
-        }
-        &-first {
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            border-bottom: 0;
-        }
-        &-last {
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            border-top: 0;
-        }
-        &_active {
-          background-color: #d9e5ea;
-          font-weight: 600;
-        }
+    &.active {
+      background-color: #d6e5eb;
+      color           : #59656d;
+      font-weight     : 400;
     }
+  }
 }

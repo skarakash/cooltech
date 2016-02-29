@@ -1,0 +1,23 @@
+.catalog__header
+    .catalog__filter
+      form(action="#").sort-by
+        label(for="").sort-by__text
+          |Сортировать по
+          select(name="").select-by__list
+            option по цене
+            option размеру экрана
+            option производителю
+            
+    .catalog__view
+      span.catalog__view__text
+        | Вид каталога
+      ul.catalog__view__icons__list
+        li.catalog__view__icons__item
+          span.catalog__view__icons__link-wrapper
+            a(href="#").catalog__view__icons__link.catalog__view__icons__link-list-2
+        li.catalog__view__icons__item
+          span.catalog__view__icons__link-wrapper
+            a(href="#").catalog__view__icons__link.catalog__view__icons__link-grid
+        li.catalog__view__icons__item
+          span.catalog__view__icons__link-wrapper
+            a(href="#").catalog__view__icons__link.catalog__view__icons__link-list

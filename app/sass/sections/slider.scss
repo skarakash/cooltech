@@ -1,0 +1,30 @@
+$grey: #dee2e5;
+$orange: #ff6600;
+
+
+.ui-slider-horizontal {
+  height: 3px;
+  background: $grey;
+  border-radius: 0;
+  border: 0 none;
+  outline: none;
+  margin-bottom: 25px;
+  *{
+    outline: none;
+  }
+
+  .ui-slider-range {
+    background: $orange;
+  }
+
+  .ui-slider-handle {
+  	top: -.3em;
+    background: url(../img/range-pointer.png);
+    position: absolute;
+    height: 14px;
+    width: 8px;
+    top: 0;
+    border: 0 none;
+    margin-left: -.2em;
+  }
+}

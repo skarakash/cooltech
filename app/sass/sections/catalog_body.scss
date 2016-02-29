@@ -1,0 +1,282 @@
+$grey: #dee2e5;
+.catalog__body {
+  clear: both;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.goods__list {
+  margin-bottom: 65px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.goods__item {
+  border: 1px solid $grey;
+
+  &:first-child {
+    border-top: 0;
+  }
+}
+
+.goods__item-inner {
+  padding: 13px 20px;
+  position: relative;
+  &::after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+}
+
+.goods__left {
+  float: left;
+  width: 20%;
+  margin-right: 25px;
+}
+
+.goods__slideshow {
+  width: 140px;
+  margin-bottom: 18px;
+}
+
+.goods_slideshow-block {
+  margin-bottom: 18px;
+
+}
+
+.goods_slideshow-display {
+  height: 134px;
+  width: 134px;
+  border: 1px solid $grey;
+  background: #ffffff;
+  display: block;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 18px;
+
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.goods__slideshow-img {
+  display: block;
+  max-width: 95%;
+  max-height: 95%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.goods_slideshow__buttons {
+  margin-left: -15px;
+  margin-top: 5px;
+  &::after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+}
+
+.goods_slideshow__item {
+  margin-left: 15px;
+  float: left;
+  list-style-type: none;
+}
+
+.goods_slideshow__link {
+  @extend .goods_slideshow-display;
+  width: 34px;
+  height: 34px;
+  border-radius: 3px;
+  margin-bottom: 0;
+  position: relative;
+  &:hover{
+    border-color: $orange;
+  }
+}
+
+.goods_slideshow-buttons-img {
+  max-width: 95%;
+  max-width:  95%;
+  display: block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.goods__articul {
+  text-align: center;
+}
+
+.goods__articul-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 16px;
+  color: #808080;
+}
+
+  .goods__articul-num {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 18px;
+    color: #303030;
+    font-weight: 600;
+  }
+
+
+.goods__info {
+  float: left;
+  width: 380px;
+}
+
+.goods__info-title {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  margin-top: 12px;
+  color: #010101;
+}
+
+.goods__info-item {
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.goods__info-value {
+  display: inline;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.goods__info-key {
+  display: inline;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 2px;
+}
+
+.goods__info-options {
+  margin-bottom: 18px;
+}
+
+.goods__info-item_grey {
+  background-color: transparent;
+}
+
+.goods_ratio-stars {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.goods__ratio-stars-item {
+  display: inline-block;
+  background-image: url(../img/white-star.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 15px;
+}
+
+.goods__ratio-stars-item_filled {
+  background-image: url(../img/red-star.png);
+}
+
+  .goods__ratio {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .goods__ratio-number {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #b2bfcc;
+    color: #fbfbfb;
+    font-size: 14px;
+    line-height: 16px;
+    width: 27px;
+    height: 15px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+
+.goods__right {
+position: absolute;
+top: 23px;
+bottom: 23px;
+right: 23px;
+width: 123px;
+text-align: right;
+border-left: 1px solid $grey;
+}
+
+.goods__inform {
+  padding-left: 25px;
+  height: 100%;
+}
+
+.goods_info-bottom {
+  position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.goods__buy_button {
+  background-color: $orange;
+  color: #fff7f4;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.goods__price {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  position: relative;
+  &::after {
+    content: url(../img/rub.png);
+    height: 12px;
+    width: 14px;
+  }
+}
+
+.goods__availability {
+  font-size: 12px;
+  line-height: 20px;
+  color: #7f7f7f;
+  font-weight: 600;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: url(../img/green_point.png);
+    height: 12px;
+    width: 14px;
+    left: 8px;
+  }
+}
+
+
+//views
+@import "views/grid-view";
+@import "views/list-view"

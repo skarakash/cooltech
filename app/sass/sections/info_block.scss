@@ -1,32 +1,40 @@
-.infoblock {
-    margin-bottom: 30px;
-    text-align: justify;
-    font-size: 0.875rem;
+infoblock {
+  clear: both;
+  &:after {
+    content: '';
+    display: block;
     clear: both;
-    &__leftcol {
-        float: left;
-        width: 48%;
-    }
-    &__rightcol {
-        float: right;
-        width: 48%;
-    }
-    &__paragraph {
-        text-indent: 1.5em;
-    }
-    &:after {
-        content: '';
-        display: block;
-        clear: both;
-    }
+  }
+}
+
+.infoblock__text {
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #303030;
+    margin-bottom: 20px;
+  }
+}
+
+.infoblock__header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #2f2f2f;
 }
 
 .first {
-    width: 48%!important;
-    float: left!important;
+  float: left !important;
+  width: 47% !important;
+  text-align: justify;
+  padding: 1%;
+  padding-left: 0;
 }
 
 .last {
-    width: 48%!important;
-    float: right!important;
+  float: right !important;
+  width: 47% !important;
+  text-align: justify;
+  padding: 1%;
+  padding-left: 0;
 }

@@ -1,0 +1,143 @@
+.goods__list_grid {
+  overflow     : auto;
+  border-radius: 0;
+  margin-left  : -11px;
+  background   : none;
+  .goods__item {
+    display      : inline-block;
+    width        : 234px;
+    border-top   : 0;
+    text-align   : center;
+    border-radius: 5px;
+    margin-left  : 11px;
+    margin-bottom: 11px;
+    border       : 1px solid $grey;
+    background   : #fbfbfb;
+  }
+  .goods__item-inner {
+    padding: 13px;
+  }
+  .goods_slideshow {
+    width     : auto;
+    text-align: center;
+    float     : none;
+  }
+  .goods_slideshow-display {
+    display: inline-block;
+  }
+  .goods_slideshow__item {
+    display: inline-block;
+    float  : none;
+  }
+  .goods__left {
+    float : none;
+    margin: auto;
+    width : auto;
+  }
+  .goods__articul {
+    display: none;
+  }
+  .goods__info {
+    width      : auto;
+    float      : none;
+    margin-left: 0;
+    border     : 0 none;
+    text-align : center;
+    &::after {
+      content: '';
+      display: block;
+      clear  : both;
+    }
+  }
+  .goods__right {
+    position  : static;
+    width     : auto;
+    text-align: center;
+    border    : 0 none;
+  }
+  .goods_info-bottom {
+    position: static;
+    border  : 0 none;
+    &:after {
+      content: '';
+      display: block;
+      clear  : both;
+    }
+  }
+  .goods__buy_button {
+    margin-bottom: 0;
+    float        : right;
+  }
+  .goods__availability {
+    float      : left;
+    margin-left: 22px;
+    padding-top: 11px;
+    &::before {
+      left: -16px;
+      top : 9px;
+    }
+  }
+  .goods__ratio {
+    margin-bottom: 15px;
+    clear        : both;
+  }
+  .goods__price {
+    text-align   : center;
+    margin-bottom: 10px;
+  }
+  .goods__info-title {
+    font-size: 13px;
+  }
+  .goods__info-options {
+    &::after {
+      content: '';
+      display: block;
+      clear  : both;
+    }
+  }
+  .goods__info-item {
+    display: block;
+    &::after {
+      display: block;
+      content: '';
+      clear  : both;
+    }
+  }
+  .goods__info-value {
+    font-size    : 14px;
+    color        : #2f2f2f;
+    font-size    : 14px;
+    line-height  : 22px;
+    display      : block;
+    float        : right;
+    width        : 47%;
+    text-align   : right;
+    white-space  : nowrap;
+    overflow     : hidden;
+        &::after {
+      content: '';
+      display: block;
+      clear  : both;
+    }
+  }
+  .goods__info-key {
+    font-size    : 14px;
+    color        : #2f2f2f;
+    font-size    : 14px;
+    line-height  : 22px;
+    display      : block;
+    float        : left;
+    width        : 52%;
+    text-align   : left;
+    white-space  : nowrap;
+    overflow     : hidden;
+    &::after {
+      content: '';
+      display: block;
+      clear  : both;
+    }
+  }
+  .goods__info-item_grey {
+    background-color: $grey;
+  }
+}
